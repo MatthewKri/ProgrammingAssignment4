@@ -4,7 +4,7 @@
 <html lang="en">
 
     <head>
-    <!-- <script src="html.js"></script> -->
+
 
         <title>basic example page</title>
     </head>
@@ -12,16 +12,14 @@
     <body>
 
         <h1>This is AVATAR!!!!!!!!!!!!!!!!!!!!!!!!!!</h2>
-        <button type="button" onClick="renderAvatar()"> Render Him </button> 
-        <p></p>
         <canvas id="avatarCanvas" width="200" height="200"></canvas>
+        <script src="html.js"></script>
+        <p></p>
+        <button type="button" onclick="toggleImage()">Show Reference!</button>
+        <img id="referenceImage" src="aang.jpg" alt="Aang from Avatar: The Last Airbender" width="500" height="333" style="display: none;">
+        
+        <script src="script.js"></script>
 
-        <script>
-                const canvas = document.getElementById("avatarCanvas");
-                const ctx = canvas.getContext("2d");
-                ctx.fillStyle= "beige";
-                ctx.fillRect(25, 25, 50, 50)
-        </script>
     </body>
 
 

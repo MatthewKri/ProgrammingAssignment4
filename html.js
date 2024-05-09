@@ -66,6 +66,29 @@ function toggleImage() {
     }
 }
 
-document.getElementById("myBtn").addEventListener("click", function() {
-    alert("He is the last one!");
-  });
+document.addEventListener("DOMContentLoaded", function() {
+    var elementSelect = document.getElementById("elementSelect");
+    
+    elementSelect.addEventListener("change", function() {
+        var selectedElement = elementSelect.value;
+        var body = document.body;
+
+        switch (selectedElement) {
+            case "fire":
+                body.style.backgroundColor = "orange";
+                break;
+            case "air":
+                body.style.backgroundColor = "lightblue";
+                break;
+            case "earth":
+                body.style.backgroundColor = "green";
+                break;
+            case "water":
+                body.style.backgroundColor = "blue";
+                break;
+            default:
+                body.style.backgroundColor = "white";
+                break;
+        }
+    });
+});

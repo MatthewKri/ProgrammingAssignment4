@@ -57,6 +57,10 @@ ctx.moveTo(90,108);
 ctx.lineTo(99,107);
 ctx.stroke();
 
+document.getElementById("myBtn").addEventListener("click", function() {
+    alert("He is the last one!");
+      });
+
 function toggleImage() {
     var image = document.getElementById("referenceImage");
     if (image.style.display === "none") {

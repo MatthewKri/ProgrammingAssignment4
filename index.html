@@ -17,7 +17,13 @@
         <p></p>
         <button type="button" onclick="toggleImage()">Show Reference!</button>
         <img id="referenceImage" src="aang.jpg" alt="Aang from Avatar: The Last Airbender" width="500" height="333" style="display: none;">
-        
+        <button id="myBtn">Hover Over Me!</button>
+
+        <script>
+        document.getElementById("myBtn").addEventListener("onmouseover", function() {
+          alert("He is the last one!");
+        });
+        </script>        
         <script src="script.js"></script>
 
     </body>

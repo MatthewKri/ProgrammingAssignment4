@@ -66,29 +66,23 @@ function toggleImage() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    var elementSelect = document.getElementById("elementSelect");
-    
-    elementSelect.addEventListener("change", function() {
-        var selectedElement = elementSelect.value;
-        var body = document.body;
+var elementSelect = document.getElementById("element select");
+elementSelect.addEventListener("change", function() {
+    var selectedElement = elementSelect.value;
+    var body = document.body;
 
-        switch (selectedElement) {
-            case "fire":
-                body.style.backgroundColor = "orange";
-                break;
-            case "air":
-                body.style.backgroundColor = "lightblue";
-                break;
-            case "earth":
-                body.style.backgroundColor = "green";
-                break;
-            case "water":
-                body.style.backgroundColor = "blue";
-                break;
-            default:
-                body.style.backgroundColor = "white";
-                break;
-        }
-    });
+    switch (selectedElement) {
+        case "fire":
+            body.style.backgroundColor = "#FFD580";
+            break;
+        case "air":
+            body.style.backgroundColor = "lightyellow";
+            break;
+        case "earth":
+            body.style.backgroundColor = "lightgreen";
+            break;
+        case "water":
+            body.style.backgroundColor = "lightblue";
+            break;
+    }
 });

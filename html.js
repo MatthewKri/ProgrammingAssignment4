@@ -65,3 +65,7 @@ function toggleImage() {
         image.style.display = "none";
     }
 }
+
+document.getElementById("myBtn").addEventListener("click", function() {
+    alert("He is the last one!");
+  });
